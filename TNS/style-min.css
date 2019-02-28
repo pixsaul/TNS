@@ -1,0 +1,104 @@
+body {
+	font-size: 11px;
+	padding-bottom: 20px;
+}
+
+.container-fluid {
+	max-width: 768px;
+}
+
+.del {
+	cursor: pointer;
+	color: red;
+}
+
+html.no-touch .del {
+	visibility: hidden;
+}
+
+input.playing {
+	cursor: pointer;
+}
+
+html.no-touch tr:hover .del { visibility: visible;}
+
+form#newPlayer {
+	margin: 20px 0px 30px 0px;
+}
+
+form#login {
+	margin-top: 50px;
+}
+
+.btn-success {
+box-shadow: 0px 5px 0px #1c9413;	
+}
+
+.btn-info {
+box-shadow: 0px 5px 0px #408599;	
+}
+
+.team-message {
+	margin-top: 20px;
+}
+
+#pickTeams {
+	margin-bottom: 15px;
+}
+
+.teamHeader {
+	font-weight: bold;
+	text-decoration: underline;
+	display: block;
+	margin: 20px 0 10px 0;
+	font-size: 18px;
+}
+
+.teamBlock {
+	margin-bottom: 15px;
+}
+
+.teamBlock ul {
+	padding-left:0;
+}
+
+.teamBlock ul li {
+	list-style:none;
+}
+
+.teamBlock ul li span {
+	vertical-align: top;
+}
+
+.teamBlock ul li:before{
+   content: '';
+   display: inline-block;
+   height: 20px;
+   width: 20px;
+   margin-right: 5px;
+   background: url('/i/jerseyBlack.svg') center center no-repeat;
+   background-size: 20px; 
+}
+
+.teamBlock__bibs ul li:before{
+   background: url('/i/jerseyPink.svg') center center no-repeat;
+   background-size: 20px; 
+}
+
+.teamBlock ul li:first-child:before {
+   background: url('/i/jerseyGoalie.svg') center center no-repeat;
+   background-size: 20px; 	
+}
+
+body .navbar-nav>li {
+	float: left;
+}
+
+body .navbar-nav>li>a {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+body .navbar-nav {
+	margin: 0;
+}

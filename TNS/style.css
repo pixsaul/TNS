@@ -1,0 +1,226 @@
+body#home {
+	font-size: 18px;
+	padding-bottom: 20px;
+	font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 	
+}
+
+.container-fluid {
+	max-width: 768px;
+}
+
+.del {
+	cursor: pointer;
+	color: red;
+}
+
+html.no-touch .del {
+	visibility: hidden;
+}
+
+html.no-touch .clear {
+	visibility: hidden;
+	cursor: pointer;
+	color: #666;
+	font-size: 1rem;
+	margin-left: 10px;
+	display: inline-block;
+}
+
+html.no-touch .clear:hover {
+text-decoration: underline;
+}
+
+
+input.playing {
+	cursor: pointer;
+}
+
+tr .clear {visibility: hidden;}
+
+html.no-touch tr:hover .del { visibility: visible;}
+
+html.no-touch tr.success:hover .clear { visibility: visible;}
+
+html.no-touch tr.danger:hover .clear { visibility: visible;}
+
+html.touch tr .clear { font-size: 1rem; margin-left: 5px; }
+
+html.touch tr.success .clear { visibility: visible;}
+
+html.touch tr.danger .clear { visibility: visible;}
+
+html.touch .del {
+	font-size: 0.9rem;
+}
+
+
+form#newPlayer {
+	margin: 20px 0px 30px 0px;
+}
+
+form#login {
+	margin-top: 50px;
+}
+
+.btn-success {
+box-shadow: 0px 5px 0px #1c9413;	
+}
+
+.btn-info {
+box-shadow: 0px 5px 0px #408599;	
+}
+
+.btn {
+	max-width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.team-message {
+	margin-top: 20px;
+}
+
+#pickTeams {
+	margin-bottom: 15px;
+}
+
+.teamHeader {
+	font-weight: bold;
+	text-decoration: underline;
+	display: block;
+	margin:15px 0 10px 0;
+	font-size: 2.4rem;
+}
+
+.teamBlock {
+	margin-bottom: 15px;
+}
+
+.teamBlock ul {
+	padding-left:0;
+}
+
+.teamBlock ul li {
+	list-style:none;
+}
+
+.teamBlock ul li span {
+	vertical-align: top;
+}
+
+.teamBlock ul li:before{
+   content: '';
+   display: inline-block;
+   height: 20px;
+   width: 20px;
+   margin-right: 5px;
+   background: url('/i/jerseyBlack.svg') center center no-repeat;
+   background-size: 20px; 
+}
+
+.teamBlock__bibs ul li:before{
+	display: none;
+}
+
+.teamBlock__bibs ul li:after{
+	   content: '';
+   display: inline-block;
+   height: 20px;
+   width: 20px;
+   margin-left: 5px;
+   background: url('/i/jerseyPink.svg') center center no-repeat;
+   background-size: 20px; 
+}
+
+.teamBlock ul li:first-child:before {
+   background: url('/i/jerseyGoalie.svg') center center no-repeat;
+   background-size: 20px; 	
+}
+
+.teamBlock__bibs ul li:first-child:after {
+   background: url('/i/jerseyGoalie.svg') center center no-repeat;
+   background-size: 20px; 	
+}
+
+.teamBlock__bibs ul {
+	text-align: right;
+}
+
+.teamBlock__bibs .teamHeader {
+	text-align: right;
+	text-decoration: none;
+	margin-right: -20px;
+}
+
+.teamBlock__bibs .teamHeader strong {
+	text-decoration: underline;
+}
+
+.teamBlock__bibs .teamHeader em {
+	text-decoration: none;
+	display: inline-block;
+	margin: 0 2px;
+	font-style: normal;
+	margin-left: 6px;
+	}
+
+
+body .navbar-nav>li {
+	float: left;
+}
+
+body .navbar-nav>li>a {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+body .navbar-nav {
+	margin: 0;
+}
+
+
+@media (max-width: 599px) {
+	body#home {
+		font-size: 14px;
+	}
+	
+	.teamHeader {
+		font-size: 1.8rem;
+		margin-top: 0;
+	}
+}
+
+@media (min-width: 600px) {
+	
+	.teamBlock ul li:before{
+		position: relative;
+		top: 2px;
+	}
+	
+	.teamBlock__bibs ul li:after{
+		position: relative;
+		top: 2px;
+	}
+	
+
+ 
+}
+
+@media (min-width: 900px) { }
+
+@media (min-width: 1200px) { }
+
+@media (min-width: 1800px) { }
+
+.subsList li {
+	font-size: 32px;
+}
+
+.subsList li input {
+	width: 20px;
+	height: 20px;
+}
+
+.del {
+	display: none !important;
+}
